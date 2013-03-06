@@ -34,11 +34,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="ANewsFactory.cs" />
-    <Compile Include="Content.cs" />
-    <Compile Include="Footer.cs" />
-    <Compile Include="Header.cs" />
+    <Compile Include="factories\AbstractComponentFactory.cs" />
     <Compile Include="NieuwsBericht.cs" />
+    <Compile Include="products\Content.cs" />
+    <Compile Include="products\Footer.cs" />
+    <Compile Include="products\Header.cs" />
+    <Compile Include="stores\ANewsFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
