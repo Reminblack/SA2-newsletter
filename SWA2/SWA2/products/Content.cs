@@ -5,10 +5,15 @@ using System.Text;
 
 namespace SWA2
 {
+   
     public interface Content
     {
-        public String image;
-        public int lettergrootte;
-        public String lettertype;
+        private int lettergrootte;
+        private String lettertype;
+        private String text;
+        private String image;
+
+        protected void setText(String _nieuwsText);
+        protected void setImage(String _image);
     }
 }

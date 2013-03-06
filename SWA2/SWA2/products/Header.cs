@@ -7,9 +7,11 @@ namespace SWA2
 {
     public interface Header
     {
-        public String titel;
-        public int lettergrootte;
-        public String lettertype;
-        public DateTime datum;
+        private String titel;
+        private int lettergrootte;
+        private String lettertype;
+        private DateTime datum;
+
+        protected void setTitel(String _title);
     }
 }

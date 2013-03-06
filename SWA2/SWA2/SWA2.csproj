@@ -37,13 +37,26 @@
     <Compile Include="factories\AbstractComponentFactory.cs" />
     <Compile Include="NieuwsBericht.cs" />
     <Compile Include="products\Content.cs" />
+    <Compile Include="products\Contents\Nieuwscontent.cs" />
+    <Compile Include="products\Contents\Overlijdingscontent.cs" />
+    <Compile Include="products\Contents\Sportcontent.cs" />
+    <Compile Include="products\Contents\Weerberichtcontent.cs" />
     <Compile Include="products\Footer.cs" />
+    <Compile Include="products\Footers\Nieuwsfooter.cs" />
+    <Compile Include="products\Footers\Overlijdingsfooter.cs" />
+    <Compile Include="products\Footers\Sportfooter.cs" />
+    <Compile Include="products\Footers\Weerberichtfooter.cs" />
     <Compile Include="products\Header.cs" />
+    <Compile Include="products\Headers\Nieuwsheader.cs" />
+    <Compile Include="products\Headers\Overlijdingsheader.cs" />
+    <Compile Include="products\Headers\Sportheader.cs" />
+    <Compile Include="products\Headers\Weerberichtheader.cs" />
     <Compile Include="stores\ANewsFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

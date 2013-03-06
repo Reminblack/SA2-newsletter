@@ -7,8 +7,10 @@ namespace SWA2
 {
     public interface Footer
     {
-        public int lettergrootte;
-        public String lettertype;
-        public String naamauteur;
+        private int lettergrootte;
+        private String lettertype;
+        private String naamAuteur;
+
+        protected void setAuteurNaam(String _naamAuteur);
     }
 }
