@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using SWA2.products.Headers;
 
 namespace SWA2.factories
 {
@@ -10,7 +11,6 @@ namespace SWA2.factories
         public Header createHeader()
         {
             Header header = new WeerberichtHeader();
-
             return header;
         }
 
