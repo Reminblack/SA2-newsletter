@@ -35,6 +35,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="ANewsFactory.cs" />
+    <Compile Include="Content.cs" />
+    <Compile Include="Footer.cs" />
+    <Compile Include="Header.cs" />
     <Compile Include="NieuwsBericht.cs" />
   </ItemGroup>
   <ItemGroup>
