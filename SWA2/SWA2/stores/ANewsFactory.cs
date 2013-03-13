@@ -7,7 +7,7 @@ namespace SWA2
 {
     public abstract class ANewsFactory
     {
-        public abstract NieuwBericht createNieuwsbericht(String type)
+        public abstract NieuwsBericht createNieuwsbericht(String type)
         {
             NieuwsBericht news = writeNieuwsBericht(type);
 

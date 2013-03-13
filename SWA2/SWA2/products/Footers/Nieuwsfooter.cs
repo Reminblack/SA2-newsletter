@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SWA2.products.Footers
 {
-    class Nieuwsfooter : Footer
+    class Nieuwsfooter : IFooter
     {
         private int lettergrootte = 12;
         private String lettertype = "Arial";

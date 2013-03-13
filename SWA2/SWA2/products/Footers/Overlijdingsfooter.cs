@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SWA2.products.Footers
 {
-    class Overlijdingsfooter : Footer
+    class Overlijdingsfooter : IFooter
     {
         private int lettergrootte = 10;
         private String lettertype = "Times New Roman";

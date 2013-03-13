@@ -8,8 +8,8 @@ namespace SWA2
     public class NieuwsBericht
     {
         String type;
-        Header header;
-        Content content;
-        Footer footer;
+        IHeader header;
+        IContent content;
+        IFooter footer;
     }
 }

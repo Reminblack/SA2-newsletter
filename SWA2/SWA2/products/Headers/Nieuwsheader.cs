@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SWA2.products.Headers
 {
-    class Nieuwsheader : Header
+    class Nieuwsheader : IHeader
     {
         private String titel;
         private int lettergrootte = 16;

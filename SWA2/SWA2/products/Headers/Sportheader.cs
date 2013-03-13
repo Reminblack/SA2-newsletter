@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SWA2.products.Headers
 {
-    class Sportheader : Header
+    class Sportheader : IHeader
     {
         private String titel;
         private int lettergrootte = 24;
