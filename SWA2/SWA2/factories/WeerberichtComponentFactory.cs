@@ -7,16 +7,16 @@ namespace SWA2.factories
 {
     class WeerberichtComponentFactory : AbstractComponentFactory
     {
-        public Header createHeader()
+        public IHeader createHeader()
         {
             IHeader header = new SWA2.products.Headers.Weerberichtheader();
 
 
-            return IHeader;
+            return header;
         }
 
-        public Content createContent();
+        public IContent createContent();
 
-        public Footer createFooter();
+        public IFooter createFooter();
     }
 }

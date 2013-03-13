@@ -35,6 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="factories\AbstractComponentFactory.cs" />
+    <Compile Include="factories\WeerberichtComponentFactory.cs" />
     <Compile Include="NieuwsBericht.cs" />
     <Compile Include="products\IContent.cs" />
     <Compile Include="products\Contents\Nieuwscontent.cs" />
@@ -51,7 +52,7 @@
     <Compile Include="products\Headers\Overlijdingsheader.cs" />
     <Compile Include="products\Headers\Sportheader.cs" />
     <Compile Include="products\Headers\Weerberichtheader.cs" />
-    <Compile Include="stores\ANewsFactory.cs" />
+    <Compile Include="stores\ANewsStore.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
