@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace SWA2.products.Contens
+namespace SWA2.products.Contents
 {
-    class WeerberichtContent : Content
+    class WeerberichtContent : IContent
     {
         private int lettergrootte = 13;
         private String lettertype = "Arial Black";

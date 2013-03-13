@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SWA2.products.Footers
 {
-    class Weerberichtfooter : Footer
+    class Weerberichtfooter : IFooter
     {
         private int lettergrootte = 14;
         private String lettertype = "Arial Black";

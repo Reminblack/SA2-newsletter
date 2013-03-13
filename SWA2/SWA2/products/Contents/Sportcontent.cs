@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SWA2.products.Contents
 {
-    class SportContent : Content
+    class SportContent : IContent
     {
         private int lettergrootte = 12;
         private String lettertype = "Times New Roman";

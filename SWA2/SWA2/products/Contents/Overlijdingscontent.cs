@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SWA2.products.Contents
 {
-    class OverlijdingsContent : Content
+    class OverlijdingsContent : IContent
     {
         private int lettergrootte = 10;
         private String lettertype = "Arial";

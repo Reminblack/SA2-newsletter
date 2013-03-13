@@ -36,17 +36,17 @@
   <ItemGroup>
     <Compile Include="factories\AbstractComponentFactory.cs" />
     <Compile Include="NieuwsBericht.cs" />
-    <Compile Include="products\Content.cs" />
+    <Compile Include="products\IContent.cs" />
     <Compile Include="products\Contents\Nieuwscontent.cs" />
     <Compile Include="products\Contents\Overlijdingscontent.cs" />
     <Compile Include="products\Contents\Sportcontent.cs" />
     <Compile Include="products\Contents\Weerberichtcontent.cs" />
-    <Compile Include="products\Footer.cs" />
+    <Compile Include="products\IFooter.cs" />
     <Compile Include="products\Footers\Nieuwsfooter.cs" />
     <Compile Include="products\Footers\Overlijdingsfooter.cs" />
     <Compile Include="products\Footers\Sportfooter.cs" />
     <Compile Include="products\Footers\Weerberichtfooter.cs" />
-    <Compile Include="products\Header.cs" />
+    <Compile Include="products\IHeader.cs" />
     <Compile Include="products\Headers\Nieuwsheader.cs" />
     <Compile Include="products\Headers\Overlijdingsheader.cs" />
     <Compile Include="products\Headers\Sportheader.cs" />
