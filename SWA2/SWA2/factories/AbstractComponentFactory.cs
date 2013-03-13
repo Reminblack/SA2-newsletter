@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SWA2
 {
-    public interface AbstractComponentFactory
+    public abstract class AbstractComponentFactory
     {
         public Header createHeader();
 
