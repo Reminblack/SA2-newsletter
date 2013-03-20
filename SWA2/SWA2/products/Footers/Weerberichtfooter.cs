@@ -15,5 +15,10 @@ namespace SWA2.products.Footers
         {
             naamAuteur = _naamAuteur;
         }
+
+        protected String getAuteurNaam()
+        {
+            return naamAuteur;
+        }
     }
 }

@@ -16,5 +16,10 @@ namespace SWA2.products.Headers
         {
             titel = _title;
         }
+
+        protected String getTitel()
+        {
+            return titel;
+        }
     }
 }

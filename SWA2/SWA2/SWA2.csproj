@@ -35,6 +35,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="factories\AbstractComponentFactory.cs" />
+    <Compile Include="factories\NieuwsberichtComponentFactory.cs" />
+    <Compile Include="factories\OverlijdingsberichtComponentFactory.cs" />
+    <Compile Include="factories\SportberichtComponentFactory.cs" />
     <Compile Include="factories\WeerberichtComponentFactory.cs" />
     <Compile Include="NieuwsBericht.cs" />
     <Compile Include="products\IContent.cs" />

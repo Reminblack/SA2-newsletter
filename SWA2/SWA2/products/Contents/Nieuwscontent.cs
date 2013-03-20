@@ -21,5 +21,15 @@ namespace SWA2.products.Contents
         {
             image = _image;
         }
+
+        protected String getImage()
+        {
+            return image;
+        }
+
+        protected String getText()
+        {
+            return text;
+        }
     }
 }
