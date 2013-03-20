@@ -5,11 +5,11 @@ using System.Text;
 
 namespace SWA2.factories
 {
-    class WeerberichtComponentFactory : AbstractComponentFactory
+    class SportberichtComponentFactory : AbstractComponentFactory
     {
         public IHeader createHeader()
         {
-            IHeader header = new SWA2.products.Headers.Weerberichtheader();
+            IHeader header = new SWA2.products.Headers.Sportheader();
 
 
             return header;
@@ -17,14 +17,14 @@ namespace SWA2.factories
 
         public IContent createContent()
         {
-            IContent content = new SWA2.products.Contents.WeerberichtContent();
+            IContent content = new SWA2.products.Contents.SportContent();
 
             return content;
         }
 
         public IFooter createFooter()
         {
-            IFooter footer = new SWA2.products.Footers.Weerberichtfooter();
+            IFooter footer = new SWA2.products.Footers.Sportfooter();
 
             return footer;
         }
