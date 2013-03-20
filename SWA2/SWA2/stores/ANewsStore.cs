@@ -43,8 +43,14 @@ namespace SWA2
                 news.setContent(factory.createContent());
                 news.setFooter(factory.createFooter());
             }
+
+            Console.WriteLine(news.getType());
+            Console.WriteLine(news.getHeader());
+            Console.WriteLine(news.getContent());
+            Console.WriteLine(news.getFooter());
+            
             return news;
-        }
+            }
 
         protected abstract NieuwsBericht writeNieuwsBericht(String type)
         {

@@ -10,7 +10,7 @@ namespace SWA2.factories
         public IHeader createHeader()
         {
             IHeader header = new SWA2.products.Headers.Weerberichtheader();
-
+            header.setTitel("Ik ben een weerberichtheader");
 
             return header;
         }
@@ -18,6 +18,7 @@ namespace SWA2.factories
         public IContent createContent()
         {
             IContent content = new SWA2.products.Contents.WeerberichtContent();
+            content.setText("Ik ben een weerberichtheader");
 
             return content;
         }
@@ -25,6 +26,7 @@ namespace SWA2.factories
         public IFooter createFooter()
         {
             IFooter footer = new SWA2.products.Footers.Weerberichtfooter();
+            footer.setAuteurNaam("Ik ben een weerberichtFooter");
 
             return footer;
         }
