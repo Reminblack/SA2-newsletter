@@ -7,41 +7,47 @@ namespace SWA2
 {
     public class ANewsStore
     {
-        public NieuwsBericht createBericht(String type)
+        public abstract NieuwsBericht createNieuwsbericht(String type)
         {
-            NieuwsBericht news = writeBericht(type);
+            NieuwsBericht news = new NieuwsBericht();
 
-            news.maak();
-            news.verifieer();
-            news.post();
-
-            return news;
-        }
-
-        private NieuwsBericht writeBericht(String type)
-        {
-            NieuwsBericht bericht;
-            if (type.Equals("Weerbericht"))
+            if (type.Equals("weerbericht"))
             {
-                bericht = new WeerberichtComponentFactory();
-                //weerbericht.
-            } 
-            else if(type.Equals("Overlijdingsbericht"))
-            {
-                //bericht = new OverlijdingsberichtComponentFactory();
-            }
-            else if (type.Equals("Sportbericht"))
-            {
-                //bericht = new SportberichtComponentFactory();
+                AbstractComponentFactory factory = new factories.WeerberichtComponentFactory();
+                news.setType("Weerbericht");
+                news.setHeader(factory.createHeader());
+                news.setContent(factory.createContent());
+                news.setFooter(factory.createFooter());
             }
             else if (type.Equals("Nieuwsbericht"))
             {
-                //bericht = new NieuwsberichtComponentFactory();
+                AbstractComponentFactory factory = new factories.NieuwsberichtComponentFactory();
+                news.setType("Nieuwsbericht");
+                news.setHeader(factory.createHeader());
+                news.setContent(factory.createContent());
+                news.setFooter(factory.createFooter());
             }
-            else
+            else if (type.Equals("Sportbericht"))
             {
-                return null;
+                AbstractComponentFactory factory = new factories.SportberichtComponentFactory();
+                news.setType("Sportbericht");
+                news.setHeader(factory.createHeader());
+                news.setContent(factory.createContent());
+                news.setFooter(factory.createFooter());
             }
+            else if (type.Equals("Overlijdingsbericht"))
+            {
+                AbstractComponentFactory factory = new factories.OverlijdingsberichtComponentFactory();
+                news.setType("Overlijdingsbericht");
+                news.setHeader(factory.createHeader());
+                news.setContent(factory.createContent());
+                news.setFooter(factory.createFooter());
+            }
+            return news;
+        }
+
+        protected abstract NieuwsBericht writeNieuwsBericht(String type)
+        {
             return null;
         }
 
