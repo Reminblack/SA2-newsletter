@@ -10,39 +10,29 @@ namespace SWA2
         public abstract NieuwsBericht createNieuwsbericht(String type)
         {
             NieuwsBericht news = new NieuwsBericht();
+            AbstractComponentFactory factory = null;
 
             if (type.Equals("weerbericht"))
             {
-                AbstractComponentFactory factory = new factories.WeerberichtComponentFactory();
-                news.setType("Weerbericht");
-                news.setHeader(factory.createHeader());
-                news.setContent(factory.createContent());
-                news.setFooter(factory.createFooter());
+                factory = new factories.WeerberichtComponentFactory();
             }
             else if (type.Equals("Nieuwsbericht"))
             {
-                AbstractComponentFactory factory = new factories.NieuwsberichtComponentFactory();
-                news.setType("Nieuwsbericht");
-                news.setHeader(factory.createHeader());
-                news.setContent(factory.createContent());
-                news.setFooter(factory.createFooter());
+                factory = new factories.NieuwsberichtComponentFactory();
             }
-            else if (type.Equals("Sportbericht"))
+            else if (type.Equals(type))
             {
-                AbstractComponentFactory factory = new factories.SportberichtComponentFactory();
-                news.setType("Sportbericht");
-                news.setHeader(factory.createHeader());
-                news.setContent(factory.createContent());
-                news.setFooter(factory.createFooter());
+                factory = new factories.SportberichtComponentFactory();
             }
             else if (type.Equals("Overlijdingsbericht"))
             {
-                AbstractComponentFactory factory = new factories.OverlijdingsberichtComponentFactory();
-                news.setType("Overlijdingsbericht");
-                news.setHeader(factory.createHeader());
-                news.setContent(factory.createContent());
-                news.setFooter(factory.createFooter());
+                factory = new factories.OverlijdingsberichtComponentFactory();
             }
+
+            news.setType(type);
+            news.setHeader(factory.createHeader());
+            news.setContent(factory.createContent());
+            news.setFooter(factory.createFooter());
 
             Console.WriteLine(news.getType());
             Console.WriteLine(news.getHeader());
