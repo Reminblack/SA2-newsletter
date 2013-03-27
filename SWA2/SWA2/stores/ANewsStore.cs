@@ -20,7 +20,7 @@ namespace SWA2
             {
                 factory = new factories.NieuwsberichtComponentFactory();
             }
-            else if (type.Equals(type))
+            else if (type.Equals("Sportbericht"))
             {
                 factory = new factories.SportberichtComponentFactory();
             }
