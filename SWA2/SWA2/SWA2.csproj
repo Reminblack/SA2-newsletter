@@ -55,6 +55,11 @@
     <Compile Include="products\Headers\Overlijdingsheader.cs" />
     <Compile Include="products\Headers\Sportheader.cs" />
     <Compile Include="products\Headers\Weerberichtheader.cs" />
+    <Compile Include="States\ArchivedState.cs" />
+    <Compile Include="States\ConceptState.cs" />
+    <Compile Include="States\InReviewState.cs" />
+    <Compile Include="States\IState.cs" />
+    <Compile Include="States\PublishState.cs" />
     <Compile Include="stores\ANewsStore.cs" />
   </ItemGroup>
   <ItemGroup>
