@@ -8,6 +8,6 @@ namespace SWA2
     public interface IHeader
     {
         void setTitel(String _title);
-        void getTitel();
+        String getTitel();
     }
 }

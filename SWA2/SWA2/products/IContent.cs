@@ -9,8 +9,8 @@ namespace SWA2
     public interface IContent
     {
         void setText(String _nieuwsText);
-        void getText();
+        String getText();
         void setImage(String _image);
-        void getImage();
+        String getImage();
     }
 }

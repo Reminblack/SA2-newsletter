@@ -7,10 +7,10 @@ namespace SWA2
 {
     public abstract class AbstractComponentFactory
     {
-        public IHeader createHeader();
+        public abstract IHeader createHeader();
 
-        public IContent createContent();
+        public abstract IContent createContent();
 
-        public IFooter createFooter();
+        public abstract IFooter createFooter();
     }
 }

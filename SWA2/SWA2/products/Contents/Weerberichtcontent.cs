@@ -12,22 +12,22 @@ namespace SWA2.products.Contents
         private String text = null;
         private String image = null;
 
-        protected void setText(String _nieuwsText)
+        public void setText(String _nieuwsText)
         {
             text = _nieuwsText;
         }
 
-        protected void setImage(String _image)
+        public void setImage(String _image)
         {
             image = _image;
         }
 
-        protected String getImage()
+        public String getImage()
         {
             return image;
         }
 
-        protected String getText()
+        public String getText()
         {
             return text;
         }

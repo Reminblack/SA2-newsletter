@@ -7,7 +7,7 @@ namespace SWA2.factories
 {
     class WeerberichtComponentFactory : AbstractComponentFactory
     {
-        public IHeader createHeader()
+        public override IHeader createHeader()
         {
             IHeader header = new SWA2.products.Headers.Weerberichtheader();
             header.setTitel("Ik ben een weerberichtheader");
@@ -15,7 +15,7 @@ namespace SWA2.factories
             return header;
         }
 
-        public IContent createContent()
+        public override IContent createContent()
         {
             IContent content = new SWA2.products.Contents.WeerberichtContent();
             content.setText("Ik ben een weerberichtheader");
@@ -23,7 +23,7 @@ namespace SWA2.factories
             return content;
         }
 
-        public IFooter createFooter()
+        public override IFooter createFooter()
         {
             IFooter footer = new SWA2.products.Footers.Weerberichtfooter();
             footer.setAuteurNaam("Ik ben een weerberichtFooter");

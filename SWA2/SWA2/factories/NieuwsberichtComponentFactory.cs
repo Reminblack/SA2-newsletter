@@ -7,7 +7,7 @@ namespace SWA2.factories
 {
     class NieuwsberichtComponentFactory : AbstractComponentFactory
     {
-        public IHeader createHeader()
+        public override IHeader createHeader()
         {
             IHeader header = new SWA2.products.Headers.Nieuwsheader();
             header.setTitel("Ik ben een nieuwsheader");
@@ -15,14 +15,14 @@ namespace SWA2.factories
             return header;
         }
 
-        public IContent createContent()
+        public override IContent createContent()
         {
             IContent content = new SWA2.products.Contents.NieuwsContent();
             content.setText("Ik ben een NieuwsContent");
             return content;
         }
 
-        public IFooter createFooter()
+        public override IFooter createFooter()
         {
             IFooter footer = new SWA2.products.Footers.Nieuwsfooter();
             footer.setAuteurNaam("Ik ben een nieuwsfooter");

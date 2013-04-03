@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using SWA2.factories;
-namespace SWA2
+
+namespace SWA2.Stores
 {
     public class ANewsStore
     {
-        public abstract NieuwsBericht createNieuwsbericht(String type)
+        public NieuwsBericht createNieuwsbericht(String type)
         {
             NieuwsBericht news = new NieuwsBericht();
             AbstractComponentFactory factory = null;
@@ -41,11 +42,6 @@ namespace SWA2
             
             return news;
             }
-
-        protected abstract NieuwsBericht writeNieuwsBericht(String type)
-        {
-            return null;
-        }
 
     }
 }

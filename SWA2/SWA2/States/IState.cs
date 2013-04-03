@@ -8,13 +8,13 @@ namespace SWA2
     public interface IState
     {
 
-        public IState edit();
+        IState edit();
 
-        public IState review();
+        IState review();
 
-        public IState publish();
+        IState publish();
 
-        public IState archive();
+        IState archive();
         
     }
 }

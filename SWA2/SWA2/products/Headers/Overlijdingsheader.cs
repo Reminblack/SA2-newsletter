@@ -12,12 +12,12 @@ namespace SWA2.products.Headers
         private String lettertype = "Arial";
         private DateTime datum = DateTime.Now;
 
-        protected void setTitel(String _title)
+        public void setTitel(String _title)
         {
             titel = _title;
         }
 
-        protected String getTitel()
+        public String getTitel()
         {
             return titel;
         }

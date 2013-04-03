@@ -34,6 +34,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Stores\ANewsStore.cs" />
+    <Compile Include="Client.cs" />
     <Compile Include="factories\AbstractComponentFactory.cs" />
     <Compile Include="factories\NieuwsberichtComponentFactory.cs" />
     <Compile Include="factories\OverlijdingsberichtComponentFactory.cs" />
@@ -60,7 +62,6 @@
     <Compile Include="States\InReviewState.cs" />
     <Compile Include="States\IState.cs" />
     <Compile Include="States\PublishState.cs" />
-    <Compile Include="stores\ANewsStore.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

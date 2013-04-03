@@ -7,7 +7,7 @@ namespace SWA2.factories
 {
     class SportberichtComponentFactory : AbstractComponentFactory
     {
-        public IHeader createHeader()
+        public override IHeader createHeader()
         {
             IHeader header = new SWA2.products.Headers.Sportheader();
             header.setTitel("Ik ben een sportheader");
@@ -15,7 +15,7 @@ namespace SWA2.factories
             return header;
         }
 
-        public IContent createContent()
+        public override IContent createContent()
         {
             IContent content = new SWA2.products.Contents.SportContent();
             content.setText("Ik ben een sportcontent");
@@ -23,7 +23,7 @@ namespace SWA2.factories
             return content;
         }
 
-        public IFooter createFooter()
+        public override IFooter createFooter()
         {
             IFooter footer = new SWA2.products.Footers.Sportfooter();
             footer.setAuteurNaam("Ik ben een sportfooter");

@@ -1,0 +1,4 @@
+C:\Users\Remco\Documents\GitHub\SA2-newsletter\SWA2\SWA2\bin\Debug\SWA2.exe
+C:\Users\Remco\Documents\GitHub\SA2-newsletter\SWA2\SWA2\bin\Debug\SWA2.pdb
+C:\Users\Remco\Documents\GitHub\SA2-newsletter\SWA2\SWA2\obj\x86\Debug\SWA2.exe
+C:\Users\Remco\Documents\GitHub\SA2-newsletter\SWA2\SWA2\obj\x86\Debug\SWA2.pdb

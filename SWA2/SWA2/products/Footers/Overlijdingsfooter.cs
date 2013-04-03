@@ -11,12 +11,12 @@ namespace SWA2.products.Footers
         private String lettertype = "Times New Roman";
         private String naamAuteur = null;
 
-        protected void setAuteurNaam(String _naamAuteur)
+        public void setAuteurNaam(String _naamAuteur)
         {
             naamAuteur = _naamAuteur;
         }
 
-        protected String getAuteurNaam()
+        public String getAuteurNaam()
         {
             return naamAuteur;
         }
