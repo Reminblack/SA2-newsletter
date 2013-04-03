@@ -70,6 +70,11 @@ namespace SWA2
             this.state = state;
         }
 
+        public IState getState()
+        {
+            return this.state;
+        }
+
 
 
         public void edit()
