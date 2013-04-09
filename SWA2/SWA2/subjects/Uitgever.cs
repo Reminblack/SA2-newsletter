@@ -9,6 +9,7 @@ namespace SWA2.subjects
     public class Uitgever : ISubject
     {
         List<IObserver> observers = new List<IObserver>();
+        NieuwsberichtWrapper wrapper;
 
         public void registerObserver(IObserver observer)
         {
@@ -20,13 +21,18 @@ namespace SWA2.subjects
             observers.Remove(observer);
         }
 
-        public void notifyObservers(NieuwsBericht nieuwsbericht)
+        public void notifyObservers()
         {
             foreach (IObserver observer in observers)
             {
                 Console.WriteLine("observer["+observer+"] got an update");
-                observer.update(nieuwsbericht);
+                observer.update(wrapper);
             }
+        }
+
+        public void setWrapper(NieuwsberichtWrapper newWrapper)
+        {
+            wrapper = newWrapper;
         }
     }
 }

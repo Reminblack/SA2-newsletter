@@ -10,6 +10,7 @@ namespace SWA2.subjects
     {
         public void registerObserver(IObserver observer);
         public void removeObserver(IObserver observer);
-        public void notifyObserver(NieuwsBericht nieuwsbericht);        
+        public void notifyObserver(NieuwsBericht nieuwsbericht);
+        public void setWrapper(NieuwsberichtWrapper wrapper);
     }
 }
